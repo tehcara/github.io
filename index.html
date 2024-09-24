@@ -1,13 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Caroline's Portfolio</title>
+  <link rel="stylesheet" href="portstyles.css">
 </head>
 
 <body>
-  <h1>Welcome to my Portfolio!</h1>
-  <p>I'm a passionate Python programmer with skills in data analysis and strong communication abilities. </p>
+  <header>
+    <h1>Welcome to my Portfolio!</h1>
+    <p>I'm a passionate Python programmer with skills in data analysis and strong communication abilities. </p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main id="content">
+    <section>
+      <h3><a name="about"></a>About Me</h3>
+      <p>As a dedicated career returner, I'm enthusiastic about transitioning my skills and experience into the tech
+        industry. I possess a strong foundation in Python programming and data analysis, complemented by exceptional
+        communication and interpersonal skills developed through years of caregiving. My background has instilled in me
+        a
+        knack for problem-solving, adaptability, and a collaborative approach. I'm seeking a part-time, remote coding
+        role
+        where I can leverage my technical expertise and passion for learning to contribute to a dynamic team and make a
+        meaningful impact.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h3><a name="portfolio"></a>Portfolio</h3>
+      <ul>
+        <li>
+          <h4>OU Project (title pending grade)</h4>
+          <p>A Python program that implements a simple cipher generator based on a birth month key. Demonstrates
+            understanding of encryption, padding, key derivation, and error handling.</p>
+        </li>
+        <li>
+          <h4>Edgehill Data Analysis Project</h4>
+          <p>Analyzed supermarket sales data using Python and Pandas. Created visualizations to identify trends and
+            insights
+            related to customer behavior and product performance.</p>
+          <a href="https://github.com/tehcara/supermarket-sales-analysis">View on GitHub</a>
+        </li>
+        <li>
+          <h4>Futurelearn Rock-Paper-Scissors Game</h4>
+          <p>A GUI-based Rock-Paper-Scissors game built with Tkinter. Features include score tracking and clear result
+            messages.</p>
+          <a href="https://github.com/tehcara/rock-paper-scissors-game">View on GitHub</a>
+        </li>
+        <li>
+          <h4>Tic-tac-toe Game</h4>
+          <p>A classic Tic-tac-toe game implemented in Python with a Tkinter GUI. Allows the user to play against a
+            simple
+            AI opponent.</p>
+          <a href="https://github.com/tehcara/tic-tac-toe-game">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h4>Code Gallery</h4>
+      <div class="grid-gallery">
+        <div class="grid-gallery-item">
+          <img src="tic-tac-toe-game-in-play-dm.png" alt="Tic-tac-toe Game">
+          <p>Tic-Tac-Toe Game in play, showing GUI with OS in dark mode.</p>
+        </div>
+        <div class="grid-gallery-item">
+          <img src="tic-tac-toe-game-in-play-lm.png" alt="Tic-tac-toe Game">
+          <p>Tic-Tac-Toe Game in play, showing GUI with OS in light mode.</p>
+        </div>
+        <div class="grid-gallery-item">
+          <p class="code">
+            game_board = {6: '', 7: '', 8: '',
+            3: '', 4: '', 5: '',
+            0: '', 1: '', 2: ''}
+
+            winning_lines = [[0,1,2],[3,4,5],[6,7,8],[0,4,8],
+            [2,4,6],[0,3,6],[1,4,7],[2,5,8]]
+          </p>
+          <p>The Tic-Tac-Toe Game board layout is laid out with a dictionary. The winning combinations are stored in a
+            nested list.</p>
+        </div>
+        <div class="grid-gallery-item">
+          <p class="code">
+            if board[w[i][0]]==board[w[i][1]]==board[w[i][2]]!='':
+            if board[w[i][0]]=='X': # Player wins.
+            msg_label.configure(text=win_message)
+          </p>
+          <p>Comparing the values stored in the current copy of the game board to the winning combinations determines
+            whether player X wins the Tic-Tac-Toe Game.</p>
+        </div>
+        <div class="grid-gallery-item">
+          <img src="rock-paper-scissors-in-play-dm.png" alt="Rock-Paper-Scissors Game">
+          <p>Rock-Paper-Scissors Game in play, showing GUI with OS in dark mode.</p>
+        </div>
+        <div class="grid-gallery-item">
+          <img src="rock-paper-scissors-in-play-lm.png" alt="Rock-Paper-Scissors Game">
+          <p>Rock-Paper-Scissors Game in play, showing GUI with OS in light mode.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h3><a name="skills"></a>Skills</h3>
+      <ul>
+        <li><strong>Programming Languages:</strong> Python</li>
+        <li><strong>Analysis:</strong> Pandas, NumPy, Matplotlib, Seaborn</li>
+        <li><strong>GUI Development:</strong> Tkinter</li>
+        <li><strong>Other:</strong> Git, version control, basic web development (HTML, CSS)</li>
+        <li><strong>Soft Skills:</strong> Communication, problem-solving, teamwork, adaptability</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h3><a name="contact"></a>Contact me</h3>
+      <p>You can message me via Messenger at <a href="https://m.me/caralaucampbell">m.me/caralaucampbell</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>This webpage was coded by Caroline Lau Campbell using HTML and CSS. It was last updated in September 2024.</p>
+  </footer>
 </body>
 
 </html>

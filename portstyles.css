@@ -1,0 +1,193 @@
+/* ### Colour Scheme ###
+Available at: https://colorkit.co/palette/393939-646464-8e8e8e-b9b9b9-e3e3e3/ 
+Lacquered Liquorice #393939
+Excalibur #646464
+Pedigrey #8E8E8E
+Greystone #B9B9B9
+Platinum #E3E3E3
+*/
+
+/* ### Structure & layout ### */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #393939;
+    color: #E3E3E3;
+    margin: 0;
+    font-size: 1em;
+}
+
+header {
+    background-color: #B9B9B9;
+    color: #393939;
+}
+
+header p {
+    color: #646464;
+}
+
+nav,
+footer {
+    background-color: #646464;
+}
+
+#content,
+header,
+footer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 1px dotted #E3E3E3;
+    width: 100%;
+    margin: 1em 0;
+}
+
+/* ### Navigation ### */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 15px;
+    border: 1px solid #E3E3E3;
+    background-color: #E3E3E3;
+    color: #393939;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-width: 8em;
+}
+
+nav li a:hover {
+    border: 1px dashed #393939;
+    opacity: 0.9;
+}
+
+/* ### Typography ### */
+
+h1,
+h3,
+h4,
+p,
+ul {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    color: #B9B9B9;
+    line-height: 1.5;
+    /* Line spacing for readability. */
+}
+
+a {
+    color: #E3E3E3;
+}
+
+a:hover {
+    background-color: #E3E3E3;
+    color: #393939;
+}
+
+#content ul li {
+    list-style-type: square;
+}
+
+/* ### Code Gallery ### */
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 1.5em;
+}
+
+.grid-gallery-item {
+    background: #E3E3E3;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-gallery-item .code {
+    background: #393939;
+    color: greenyellow;
+    font-size: 0.8em;
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.grid-gallery-item p {
+    background-color: #B9B9B9;
+    color: #393939;
+    text-align: left;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.grid-gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* ### Responsiveness ### */
+@media (max-width: 750px) {
+    nav ul {
+        flex-direction: column;
+        /* Stack navigation links vertically on smaller screens. */
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        float: left;
+    }
+
+    nav li a {
+        display: block;
+    }
+
+    h1,
+    h3 {
+        text-align: center;
+    }
+}
